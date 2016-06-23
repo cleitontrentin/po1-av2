@@ -1,0 +1,23 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		Pessoa pessoa = new Pessoa("Rafael");
+		
+		
+		System.out.println(pessoa.getNome()); //null ou paulo
+		
+		/*
+		RubberDuck duck = new RubberDuck();
+		duck.display();
+		duck.peformFly();
+		
+		RedheadDuck duck2 = new RedheadDuck();
+		duck2.display();
+		duck2.peformFly();
+		*/
+	}
+
+}

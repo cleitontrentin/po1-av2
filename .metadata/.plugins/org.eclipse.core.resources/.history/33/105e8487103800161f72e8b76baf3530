@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Rodada {
+
+	private List<Jogada> jogadas;
+	private Carta cartaCoringa;
+
+	public Rodada(Carta carta) {
+		this.cartaCoringa = carta;
+		this.jogadas = new ArrayList<>();
+	}
+	
+	public void adicionarJogada(Jogada jogada) {
+		jogadas.add(jogada);
+	}
+	
+	
+	
+}

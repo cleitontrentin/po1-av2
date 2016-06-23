@@ -1,0 +1,9 @@
+package com.poo.uber.model;
+
+public class Person {
+
+	private int id;
+	private String name;
+	
+	
+}

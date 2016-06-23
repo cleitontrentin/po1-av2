@@ -1,0 +1,9 @@
+package com.poo.uber.model;
+
+public class Phone {
+
+	private Integer number;
+	private TypePhone typePhone;
+	
+	
+}

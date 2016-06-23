@@ -1,0 +1,23 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String nome = "Paulo";
+		Pessoa pessoa = new Pessoa();
+		pessoa.setNome("Paulo");
+		
+		System.out.println(pessoa.getNome());
+		
+		/*
+		RubberDuck duck = new RubberDuck();
+		duck.display();
+		duck.peformFly();
+		
+		RedheadDuck duck2 = new RedheadDuck();
+		duck2.display();
+		duck2.peformFly();
+		*/
+	}
+
+}

@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		String[] sequencia = EnumCarta.TRUCO.pegarSequencia();
+		int carta = 10;
+		for (int i = 0; i < sequencia.length; i++) {
+			
+		}
+		
+		
+		/*
+		Mesa mesa = new Mesa();
+		mesa.adicionarJogadores(adicionarJogadores());
+		mesa.darCartas();
+		mesa.comecarJogo();
+		*/
+		
+	}
+
+	private static List<Jogador> adicionarJogadores() {
+		List<Jogador> jogadores = new ArrayList<>();
+		boolean continuarAdicionando;
+		do {
+			
+			Jogador jogador = new Jogador();
+			jogador.setNome(JOptionPane.showInputDialog("Digite seu nome"));
+			jogadores.add(jogador);
+			continuarAdicionando = JOptionPane.showConfirmDialog(null, "Deseja mais jogadores?") == 1 ? true : false;
+			
+		} while (!continuarAdicionando);
+		return jogadores;
+	}
+
+}

@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JOptionPane;
+
+import com.sun.javafx.collections.SortableList;
+public class Mesa {
+
+	private List<Jogador> jogadores;
+	//private List<Time> times;
+	private Rodada rodada;
+
+	public Mesa() {
+		jogadores = new ArrayList<>();
+		//times = new ArrayList<>();
+	}
+
+	public void darCartas() {
+		jogadores.forEach((jogador) -> {
+			jogador.getMao().adicionarCarta(new Carta(EnumCarta.TRUCO.pegarNumero(), EnumCarta.pegarNaipe()));
+			jogador.getMao().adicionarCarta(new Carta(EnumCarta.TRUCO.pegarNumero(), EnumCarta.pegarNaipe()));
+			jogador.getMao().adicionarCarta(new Carta(EnumCarta.TRUCO.pegarNumero(), EnumCarta.pegarNaipe()));
+		});
+	}
+
+	private void distribuirFichas() {
+		//this.jogadores.forEach((jogador) -> jogador.setFichas(400));
+	}
+
+	public void adicionarJogador(Jogador jogador) {
+		this.jogadores.add(jogador);
+	}
+
+	public void adicionarJogadores(List<Jogador> jogadores) {
+		this.jogadores.addAll(jogadores);
+		distribuirFichas();
+	}
+
+	public void comecarJogo() {
+		rodada = new Rodada(new Carta(EnumCarta.POKER.pegarNumero()));
+		jogadores.forEach((jogador) -> {
+			Carta carta = jogador.selecionarCarta();
+			rodada.adicionarJogada(new Jogada(jogador, carta));
+			jogador.getMao().removerCarta(carta);
+			JOptionPane.showMessageDialog(null, "Jogador levando a rodada: "+rodada.getMelhorJogada().getJogador().getNome());
+		});
+	}
+
+}

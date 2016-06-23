@@ -1,0 +1,8 @@
+package com.poo.uber.model;
+
+public class Driver {
+
+	private History history;
+	private Integer feedbackRate;
+	
+}

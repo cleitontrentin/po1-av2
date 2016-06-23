@@ -1,0 +1,17 @@
+package com.poo.uber.model;
+
+public class Race {
+
+	private Local local;
+	
+	public double getPrice() {
+		double value = 0;
+		double pricePerKm = 5.0;
+		if (local.getDistance() < 10) {
+			return 
+		}
+		
+		return value;
+	}
+	
+}

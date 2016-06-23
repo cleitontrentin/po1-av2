@@ -1,0 +1,9 @@
+
+public class RubberDuck extends Duck {
+
+	public RubberDuck() {
+		fly = new FlyNoWay();
+		quack = new MuteQuack();
+	}
+	
+}

@@ -1,0 +1,40 @@
+package com.poo.uber.model;
+
+public class Driver {
+
+	private History history;
+	private Integer feedbackRate;
+	private Race currentRace;
+
+	public History getHistory() {
+		return history;
+	}
+
+	public void setHistory(History history) {
+		this.history = history;
+	}
+
+	public Integer getFeedbackRate() {
+		return feedbackRate;
+	}
+
+	public void setFeedbackRate(Integer feedbackRate) {
+		this.feedbackRate = feedbackRate;
+	}
+
+	public Race getCurrentRace() {
+		return currentRace;
+	}
+
+	public void setCurrentRace(Race currentRace) {
+		this.currentRace = currentRace;
+		history.addRace(currentRace);
+	}
+
+	private void calculeFeedbackRate() {
+		int rateSum = history.getRaces().stream().mapToInt(Race::getFeedback).sum();
+		int result = rateSum / history.getRaces().size();
+		this.feedbackRate = result;
+	}
+
+}

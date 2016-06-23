@@ -1,0 +1,11 @@
+
+public class Time {
+
+	private Jogador[] jogadores;
+	private Integer ponto;
+	
+	public Time() {
+		jogadores = new Jogador[2];
+	}
+	
+}

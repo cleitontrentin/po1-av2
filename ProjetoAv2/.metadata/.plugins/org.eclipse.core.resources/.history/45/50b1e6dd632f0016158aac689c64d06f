@@ -1,0 +1,19 @@
+package com.poo.uber.service;
+
+import static spark.Spark.*;
+
+public class Teste {
+
+	private final static Integer PORT = 8080;
+	
+	private static void init() {
+		port(PORT);
+	}
+	
+	public static void main(String[] args) {
+		init();
+		get("/", (req, res) -> "Hello world");
+
+	}
+
+}

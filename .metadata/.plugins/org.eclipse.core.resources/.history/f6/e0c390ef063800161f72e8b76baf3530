@@ -1,0 +1,15 @@
+import java.util.List;
+
+public class Mao {
+	
+	private List<Carta> cartas;
+	
+	public void adicionarCarta(Carta carta) {
+		cartas.add(carta);
+	}
+	
+	public List<Carta> getCartas() {
+		return cartas;
+	}
+
+}

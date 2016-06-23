@@ -1,0 +1,15 @@
+
+public class Duck {
+
+	private IFly fly;
+	private IQuack quack;
+	
+	public void display() {
+		System.out.println("display");
+	}
+	
+	public void swim() {
+		System.out.println("swim");
+	}
+	
+}

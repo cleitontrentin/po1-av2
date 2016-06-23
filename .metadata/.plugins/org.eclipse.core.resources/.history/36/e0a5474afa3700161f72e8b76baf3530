@@ -1,0 +1,6 @@
+public class Jogador {
+
+	private String nome;
+	private Integer fichas;
+	
+}

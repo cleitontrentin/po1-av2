@@ -1,0 +1,58 @@
+import java.util.concurrent.ThreadLocalRandom;
+
+import javax.swing.JOptionPane;
+
+public class Jogador {
+
+	private Integer id;
+	private String nome;
+	private Integer fichas;
+	private Mao mao;
+	
+	public Jogador() {
+		mao = new Mao();
+		id = ThreadLocalRandom.current().nextInt(1, 1000 + 1);
+	}
+
+	public Integer getId() {
+		return id;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public Integer getFichas() {
+		return fichas;
+	}
+
+	public void setFichas(Integer fichas) {
+		this.fichas = fichas;
+	}
+
+	public Mao getMao() {
+		return mao;
+	}
+
+	public void setMao(Mao mao) {
+		this.mao = mao;
+	}
+	
+	private String mostrarCartas() {
+		StringBuilder builder = new StringBuilder();
+		int i = 0;
+		this.mao.getCartas().forEach((carta) -> {
+			builder.append(carta.toString() + "\n");
+		});
+		return builder.toString();
+	}
+	
+	public Carta selecionarCarta() {
+		
+	}
+
+}

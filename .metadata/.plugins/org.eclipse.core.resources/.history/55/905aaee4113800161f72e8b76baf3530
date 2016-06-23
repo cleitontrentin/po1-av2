@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Rodada {
+
+	private List<Jogada> jogadas;
+	private Carta cartaCoringa;
+	private Jogada melhorJogada;
+
+	public Rodada(Carta carta) {
+		this.cartaCoringa = carta;
+		this.jogadas = new ArrayList<>();
+	}
+	
+	public void adicionarJogada(Jogada jogada) {
+		jogadas.add(jogada);
+		verificarMaiorCarta();
+	}
+	
+	private void verificarMaiorCarta() {
+		for (Jogada jogada: jogadas) {
+			if (melhorJogada != null) {
+				if (jogada.getCarta().getNumero() > melhorJogada.getCarta().getNumero()) {
+					melhorJogada = jogada;
+				} else if (jogada.getCarta().getNumero() == melhorJogada.getCarta().getNumero()) {
+					if (jogada.getCarta().getNipe() > melhorJogada.getCarta().getNipe()) {
+						melhorJogada = jogada;
+					}
+				}
+			} else {
+				melhorJogada = jogada;
+			}
+		}
+	}
+	
+}

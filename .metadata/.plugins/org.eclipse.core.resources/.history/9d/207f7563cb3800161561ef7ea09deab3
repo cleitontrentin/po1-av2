@@ -1,0 +1,39 @@
+import java.util.concurrent.ThreadLocalRandom;
+
+public enum EnumCarta {
+
+	POKER {
+		@Override
+		public int pegarNumero() {
+			return ThreadLocalRandom.current().nextInt(2, 14 + 1);
+		}
+	},
+	TRUCO {
+		@Override
+		public int pegarNumero() {
+			int numero = ThreadLocalRandom.current().nextInt(1, 13 + 1);
+			if (numero > 7 && numero < 10) {
+				numero = pegarNumero();
+			}
+			return numero;
+		}
+
+		@Override
+		public String pegarSequencia() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+	};
+
+	public abstract int pegarNumero();
+
+	public abstract String pegarSequencia();
+
+	public static Integer pegarNaipe() {
+		return naipes[ThreadLocalRandom.current().nextInt(0, 3 + 1)];
+	};
+
+	private final static Integer[] naipes = { 0, 1, 2, 3 };
+
+}

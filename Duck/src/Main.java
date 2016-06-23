@@ -1,0 +1,30 @@
+import javax.swing.JOptionPane;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		String nome = JOptionPane.showInputDialog("Digite seu nome");
+		String cpf = JOptionPane.showInputDialog("Digite seu cpf");
+		
+		
+		
+		Pessoa pessoa = new Pessoa(nome, cpf);
+		
+		
+		System.out.println("Nome: "+pessoa.getNome()); //Rafael
+		System.out.println("Cpf: "+pessoa.pegarCpf());
+		
+		/*
+		RubberDuck duck = new RubberDuck();
+		duck.display();
+		duck.peformFly();
+		
+		RedheadDuck duck2 = new RedheadDuck();
+		duck2.display();
+		duck2.peformFly();
+		*/
+	}
+
+}

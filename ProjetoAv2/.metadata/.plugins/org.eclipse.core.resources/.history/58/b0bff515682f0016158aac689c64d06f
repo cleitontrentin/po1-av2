@@ -1,0 +1,5 @@
+package com.poo.uber.model;
+
+public class Driver {
+
+}

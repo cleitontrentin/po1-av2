@@ -1,0 +1,40 @@
+
+public class Pessoa {
+
+	private String nome;
+	private String cpf;
+	private String telefone;
+
+	public Pessoa(String nomeParametro) { //construtor pq não
+		this.nome = nomeParametro;       // tem void e nem tipagem
+	}
+	
+	public Pessoa() { //construtor pq não tem void e nem tipagem
+		
+	}
+	
+	public Pessoa(String nomeParametro, String cpfParametro) { //construtor  pq não
+											//tem void e nem tipagem
+		this.nome = nomeParametro;
+		this.cpf = cpfParametro;
+		
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public void setNome(String nome, Integer sobrenome) {
+		this.nome = nome;
+	}
+	
+	public String pegarCpf(){
+		return cpf;
+	}
+	
+	
+}

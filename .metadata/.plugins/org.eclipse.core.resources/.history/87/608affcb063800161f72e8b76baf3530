@@ -1,0 +1,32 @@
+
+public class Carta {
+
+	private Integer numero;
+	private String nipe;
+
+	public Carta(Integer numero, String nipe) {
+		this.numero = numero;
+		this.nipe = nipe;
+	}
+	
+	public Carta(Integer numero) {
+		this.numero = numero;
+	}
+	
+	public Integer getNumero() {
+		return numero;
+	}
+
+	public void setNumero(Integer numero) {
+		this.numero = numero;
+	}
+
+	public String getNipe() {
+		return nipe;
+	}
+
+	public void setNipe(String nipe) {
+		this.nipe = nipe;
+	}
+
+}

@@ -1,0 +1,74 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Rodada {
+
+	private List<Jogada> jogadas;
+	private Carta cartaCoringa;
+	private Jogada melhorJogada;
+
+	public Rodada(Carta carta) {
+		this.cartaCoringa = carta;
+		this.jogadas = new ArrayList<>();
+	}
+
+	public void adicionarJogada(Jogada jogada) {
+		this.jogadas.add(jogada);
+		verificarJogada();
+	}
+
+	public void calcularPontos() {
+
+	}
+
+	private void verificarJogada() {
+		for (Jogada jogada : this.jogadas) {
+			if (this.melhorJogada != null) {
+				if (jogada.getCarta().getNumero() > this.melhorJogada.getCarta().getNumero()) {
+					this.melhorJogada = jogada;
+				} else if (jogada.getCarta().getNumero() == this.melhorJogada.getCarta().getNumero()) {
+					if (jogada.getCarta().getNipe() > this.melhorJogada.getCarta().getNipe()) {
+						this.melhorJogada = jogada;
+					}
+				}
+			} else {
+				this.melhorJogada = jogada;
+			}
+		}
+	}
+	
+	private boolean isMaiorCarta(Carta melhorCarta, Carta novaCarta) {
+		String[] sequencia = EnumCarta.TRUCO.pegarSequencia();
+		if (melhorCarta == null)
+			return true;
+		
+		if ()
+		
+		return true;
+	}
+
+	public List<Jogada> getJogadas() {
+		return jogadas;
+	}
+
+	public void setJogadas(List<Jogada> jogadas) {
+		this.jogadas = jogadas;
+	}
+
+	public Carta getCartaCoringa() {
+		return cartaCoringa;
+	}
+
+	public void setCartaCoringa(Carta cartaCoringa) {
+		this.cartaCoringa = cartaCoringa;
+	}
+
+	public Jogada getMelhorJogada() {
+		return melhorJogada;
+	}
+
+	public void setMelhorJogada(Jogada melhorJogada) {
+		this.melhorJogada = melhorJogada;
+	}
+
+}

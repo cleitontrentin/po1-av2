@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Mesa mesa = new Mesa();
+		adicionarJogadores();
+		
+		
+	}
+
+	private static void adicionarJogadores() {
+		List<Jogador> jogadres = new ArrayList<>();
+		boolean continuarAdicionando;
+		
+		do {
+			Jogador jogador = new Jogador();
+			jogador.setNome(JOptionPane.showInputDialog("Digite seu nome"));
+			
+		} while (continuarAdicionando);
+	}
+
+}

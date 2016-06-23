@@ -1,0 +1,31 @@
+public class Jogador {
+
+	private String nome;
+	private Integer fichas;
+	private double dinheiro;
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public Integer getFichas() {
+		return fichas;
+	}
+
+	public void setFichas(Integer fichas) {
+		this.fichas = fichas;
+	}
+
+	public double getDinheiro() {
+		return dinheiro;
+	}
+
+	public void setDinheiro(double dinheiro) {
+		this.dinheiro = dinheiro;
+	}
+
+}

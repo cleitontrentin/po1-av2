@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Mao {
+
+	private List<Carta> cartas;
+	
+	public Mao() {
+		cartas = new ArrayList<>();
+	}
+
+	public void adicionarCarta(Carta carta) {
+		cartas.add(carta);
+	}
+
+	public List<Carta> getCartas() {
+		return cartas;
+	}
+
+}

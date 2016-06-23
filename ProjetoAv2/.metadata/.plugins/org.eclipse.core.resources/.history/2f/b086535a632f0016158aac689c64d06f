@@ -1,0 +1,13 @@
+package com.poo.uber.service;
+
+import static spark.Spark.*;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		port(8000);
+		get("/", (req, res) -> "Hello world");
+
+	}
+
+}

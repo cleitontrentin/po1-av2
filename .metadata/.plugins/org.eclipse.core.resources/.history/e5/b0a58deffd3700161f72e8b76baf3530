@@ -1,0 +1,9 @@
+
+public class Dificuldade implements IDificuldade{
+
+	@Override
+	public void dificuldade() {
+		
+	}
+
+}

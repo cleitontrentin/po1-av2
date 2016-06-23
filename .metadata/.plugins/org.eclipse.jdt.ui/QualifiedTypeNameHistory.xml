@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="IFly"/>
+<fullyQualifiedTypeName name="IQuack"/>
+<fullyQualifiedTypeName name="java.lang.Readable"/>
+<fullyQualifiedTypeName name="FlyWithWings"/>
+<fullyQualifiedTypeName name="Quack"/>
+<fullyQualifiedTypeName name="FlyNoWay"/>
+<fullyQualifiedTypeName name="MuteQuack"/>
+<fullyQualifiedTypeName name="RubberDuck"/>
+<fullyQualifiedTypeName name="RedheadDuck"/>
+<fullyQualifiedTypeName name="Pessoa"/>
+<fullyQualifiedTypeName name="Mesa"/>
+<fullyQualifiedTypeName name="Jogador"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="IDificuldade"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ThreadLocalRandom"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.lang.Number"/>
+<fullyQualifiedTypeName name="jdk.nashorn.internal.scripts.JO"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="com.sun.javafx.collections.SortableList"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.sun.accessibility.internal.resources.accessibility"/>
+<fullyQualifiedTypeName name="java.lang.Enum"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="Carta"/>
+<fullyQualifiedTypeName name="EnumCarta"/>
+<fullyQualifiedTypeName name="Jogada"/>
+</qualifiedTypeNameHistroy>

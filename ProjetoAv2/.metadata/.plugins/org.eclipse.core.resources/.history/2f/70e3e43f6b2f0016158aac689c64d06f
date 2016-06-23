@@ -1,0 +1,23 @@
+package com.poo.uber.service;
+
+import static spark.Spark.*;
+
+public class ClientService {
+
+	private static void init() {
+		port(PORT);
+	}
+	
+	public static void main(String[] args) {
+		init();
+		get("/", (req, res) -> "Hello World");
+
+		get("/usuario/:id", (req, res) -> {
+			res.status(200);
+			return "Id usuario: "+req.params(":id");
+			
+		});
+		
+	}
+
+}

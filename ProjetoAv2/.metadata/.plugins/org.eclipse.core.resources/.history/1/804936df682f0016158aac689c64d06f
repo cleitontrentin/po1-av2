@@ -1,0 +1,9 @@
+package com.poo.uber.model;
+
+public class Local {
+
+	private String pointInit;
+	private String pointEnd;
+	
+	
+}

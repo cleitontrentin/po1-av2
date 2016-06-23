@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Mesa mesa = new Mesa();
+		adicionarJogadores();
+		
+		
+	}
+
+	private static void adicionarJogadores() {
+		List<Jogador> jogadres = new ArrayList<>();
+		boolean continuarAdicionando;
+		
+		do {
+			
+			
+			
+		} while (continuarAdicionando);
+	}
+
+}

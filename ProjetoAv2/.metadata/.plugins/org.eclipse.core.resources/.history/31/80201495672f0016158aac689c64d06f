@@ -1,0 +1,8 @@
+package com.poo.uber.constant;
+
+public class PHONE {
+
+	private static final Integer MOBILE = 1;
+	private static final Integer FIX = 2;
+	
+}

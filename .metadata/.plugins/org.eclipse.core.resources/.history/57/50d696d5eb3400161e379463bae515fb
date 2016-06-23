@@ -1,0 +1,26 @@
+import javax.swing.JOptionPane;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		String nome = JOptionPane.showInputDialog("Digite seu nome");
+		Pessoa pessoa = new Pessoa("086.709.019-78", nome);
+		
+		
+		System.out.println("Cpf: "+pessoa.pegarCpf());
+		System.out.println("Nome: "+pessoa.getNome()); //Rafael
+		
+		/*
+		RubberDuck duck = new RubberDuck();
+		duck.display();
+		duck.peformFly();
+		
+		RedheadDuck duck2 = new RedheadDuck();
+		duck2.display();
+		duck2.peformFly();
+		*/
+	}
+
+}

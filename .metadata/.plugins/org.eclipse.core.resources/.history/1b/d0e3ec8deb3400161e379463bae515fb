@@ -1,0 +1,25 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		String nome = "Rafael";
+		Pessoa pessoa = new Pessoa(nome, "086.709.019-78");
+		
+		
+		System.out.println(pessoa.getNome()); //Rafael
+		System.out.println(pessoa.pegarCpf());
+		
+		/*
+		RubberDuck duck = new RubberDuck();
+		duck.display();
+		duck.peformFly();
+		
+		RedheadDuck duck2 = new RedheadDuck();
+		duck2.display();
+		duck2.peformFly();
+		*/
+	}
+
+}

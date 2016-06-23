@@ -1,0 +1,28 @@
+
+public class Jogada {
+
+	private Integer idJogador;
+	private Carta carta;
+
+	public Jogada(Integer idInteger, Carta carta) {
+		this.idJogador = idInteger;
+		this.carta = carta;
+	}
+
+	public Integer getIdJogador() {
+		return idJogador;
+	}
+
+	public void setIdJogador(Integer idJogador) {
+		this.idJogador = idJogador;
+	}
+
+	public Carta getCarta() {
+		return carta;
+	}
+
+	public void setCarta(Carta carta) {
+		this.carta = carta;
+	}
+
+}

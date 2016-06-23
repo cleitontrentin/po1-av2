@@ -1,0 +1,29 @@
+package com.poo.uber.model;
+
+public class Race {
+
+	private Local local;
+	private Integer feedback;
+
+	public Local getLocal() {
+		return local;
+	}
+
+	public void setLocal(Local local) {
+		this.local = local;
+	}
+
+	public Integer getFeedback() {
+		return feedback;
+	}
+
+	public void setFeedback(Integer feedback) {
+		this.feedback = feedback;
+	}
+
+	public double getPrice() {
+		double pricePerKm = 2.75;
+		return pricePerKm * local.getDistance();
+	}
+
+}

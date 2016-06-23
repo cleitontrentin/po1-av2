@@ -1,0 +1,10 @@
+package com.poo.uber.constant;
+
+public class FEEDBACK {
+
+	private static final Integer BAD = 1;
+	private static final Integer REGULAR = 2;
+	private static final Integer GOOD = 3;
+	private static final Integer PERFECT = 4;
+	
+}

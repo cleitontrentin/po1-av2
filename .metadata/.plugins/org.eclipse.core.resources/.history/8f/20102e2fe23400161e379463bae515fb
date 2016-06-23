@@ -1,0 +1,9 @@
+
+public class RedheadDuck extends Duck{
+
+	public RedheadDuck() {
+		fly = new FlyWithWings();
+		quack = new Quack();
+	}
+	
+}

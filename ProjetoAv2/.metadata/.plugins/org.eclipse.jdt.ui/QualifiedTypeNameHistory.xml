@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.poo.uber.services.Teste"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="javax.tools.StandardJavaFileManager"/>
+<fullyQualifiedTypeName name="spark.Spark"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.poo.uber.constant.CONFIGSERVICE"/>
+<fullyQualifiedTypeName name="com.poo.uber.model.Race"/>
+</qualifiedTypeNameHistroy>

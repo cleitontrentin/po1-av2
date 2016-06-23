@@ -1,0 +1,7 @@
+package com.poo.uber.constant;
+
+public class CONFIGSERVICE {
+
+	publuc final static Integer PORT = 8080;
+	
+}

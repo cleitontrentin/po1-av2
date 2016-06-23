@@ -1,0 +1,9 @@
+package com.poo.uber.model;
+
+public class Local {
+
+	private String startPoint;
+	private String endPoint;
+	private Integer distance;
+	
+}

@@ -1,0 +1,12 @@
+
+public class Duck {
+
+	public void display() {
+		System.out.println("display");
+	}
+	
+	public void swim() {
+		System.out.println("swim");
+	}
+	
+}

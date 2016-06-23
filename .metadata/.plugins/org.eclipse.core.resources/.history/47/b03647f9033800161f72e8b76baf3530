@@ -1,0 +1,11 @@
+
+public class Jogada {
+	
+	private Integer idJogador;
+	private Integer aposta;
+
+	public Jogada() {
+		
+	}
+	
+}

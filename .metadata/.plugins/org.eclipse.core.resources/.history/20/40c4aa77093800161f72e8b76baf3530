@@ -1,0 +1,37 @@
+
+public class Carta {
+
+	private Integer numero;
+	private String naipe;
+
+	public Carta(Integer numero, String naipe) {
+		this.numero = numero;
+		this.naipe = naipe;
+	}
+
+	public Carta(Integer numero) {
+		this.numero = numero;
+	}
+
+	public Integer getNumero() {
+		return numero;
+	}
+
+	public void setNumero(Integer numero) {
+		this.numero = numero;
+	}
+
+	public String getNipe() {
+		return naipe;
+	}
+
+	public void setNipe(String nipe) {
+		this.naipe = nipe;
+	}
+
+	@Override
+	public String toString() {
+		return "Numero: "+this.numero+ " - Naipe: "+this.naipe;
+	}
+
+}

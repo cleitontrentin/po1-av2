@@ -1,0 +1,7 @@
+package com.poo.uber.model;
+
+public class Race {
+
+	private Local local;
+	
+}

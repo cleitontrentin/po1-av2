@@ -1,0 +1,6 @@
+
+public class Mao {
+	
+	private Carta cartas;
+
+}

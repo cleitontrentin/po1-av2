@@ -1,0 +1,11 @@
+package com.poo.uber.model;
+
+public class User {
+
+	private int id;
+	private String nome;
+	
+	
+	
+	
+}
