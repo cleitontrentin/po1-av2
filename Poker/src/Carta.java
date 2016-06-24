@@ -2,9 +2,9 @@
 public class Carta {
 
 	private Integer numero;
-	private Integer naipe;
+	private Naipe naipe;
 
-	public Carta(Integer numero, Integer naipe) {
+	public Carta(Integer numero, Naipe naipe) {
 		this.numero = numero;
 		this.naipe = naipe;
 	}
@@ -21,12 +21,12 @@ public class Carta {
 		this.numero = numero;
 	}
 
-	public Integer getNipe() {
+	public Naipe getNaipe() {
 		return naipe;
 	}
 
-	public void setNipe(Integer nipe) {
-		this.naipe = nipe;
+	public void setNaipe(Naipe naipe) {
+		this.naipe = naipe;
 	}
 
 	@Override
@@ -62,7 +62,7 @@ public class Carta {
 
 	@Override
 	public String toString() {
-		return "Numero: " + this.numero + " - Naipe: " + this.naipe;
+		return "Numero: " + this.numero + " - Naipe: " + this.naipe.getDescricao();
 	}
 
 }

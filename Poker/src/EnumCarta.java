@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 public enum EnumCarta {
@@ -38,11 +40,21 @@ public enum EnumCarta {
 
 	public abstract int pegarValorReal(Carta carta);
 
-	public static Integer pegarNaipe() {
-		return naipes[ThreadLocalRandom.current().nextInt(0, 3 + 1)];
+	public static Naipe pegarNaipe() {
+		criarNaipes();
+		return naipes.get(ThreadLocalRandom.current().nextInt(0, 3 + 1));
 	};
+	
+	private static void criarNaipes() {
+		if (!naipes.isEmpty()) return;
+		
+		naipes.add(new Naipe("moles", 0));
+		naipes.add(new Naipe("espadilhas", 1));
+		naipes.add(new Naipe("copas", 2));
+		naipes.add(new Naipe("paus", 3));
+	}
 
-	private final static Integer[] naipes = { 0, 1, 2, 3 };
+	//private final static Integer[] naipes = { 0, 1, 2, 3 };
+	private final static List<Naipe> naipes = new ArrayList<>();
 	private final static String[] sequencia = new String[] { "4", "5", "6", "7", "10", "11", "12", "13", "1", "2", "3" };
-
 }

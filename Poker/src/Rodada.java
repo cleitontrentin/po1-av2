@@ -39,7 +39,7 @@ public class Rodada {
 		if (valorNovaCarta > valorMelhorCarta) {
 			return true;
 		} else if (valorNovaCarta == valorMelhorCarta) {
-			if (novaCarta.getNipe() > melhorCarta.getNipe()) {
+			if (novaCarta.getNaipe().getNumero() > melhorCarta.getNaipe().getNumero()) {
 				return true;
 			}
 		}
