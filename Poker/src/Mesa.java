@@ -5,42 +5,23 @@ import javax.swing.JOptionPane;
 
 public class Mesa {
 
-	private List<Jogador> jogadores;
-	private List<Rodada> rodadas;
-
-	public Mesa() {
-		jogadores = new ArrayList<>();
-		rodadas = new ArrayList<>();
+	private Partida partida;
+	
+	public void iniciarPartida() {
+		this.partida = new Partida();
+		this.partida.adicionarJogadores(adicionarJogadores());
+		this.partida.jogar();
 	}
 
-	private void darCartas() {
-		jogadores.forEach((jogador) -> {
-			jogador.getMao().adicionarCarta(new Carta(EnumCarta.TRUCO.pegarNumero(), EnumCarta.pegarNaipe()));
-			jogador.getMao().adicionarCarta(new Carta(EnumCarta.TRUCO.pegarNumero(), EnumCarta.pegarNaipe()));
-			jogador.getMao().adicionarCarta(new Carta(EnumCarta.TRUCO.pegarNumero(), EnumCarta.pegarNaipe()));
-		});
+	private List<Jogador> adicionarJogadores() {
+		List<Jogador> jogadores = new ArrayList<>();
+		boolean continuarAdicionando;
+		do {
+			Jogador jogador = new Jogador();
+			jogador.setNome(JOptionPane.showInputDialog("Digite seu nome"));
+			jogadores.add(jogador);
+			continuarAdicionando = JOptionPane.showConfirmDialog(null, "Deseja mais jogadores?") == 1 ? true : false;
+		} while (!continuarAdicionando);
+		return jogadores;
 	}
-
-	public void adicionarJogador(Jogador jogador) {
-		this.jogadores.add(jogador);
-	}
-
-	public void adicionarJogadores(List<Jogador> jogadores) {
-		this.jogadores.addAll(jogadores);
-		this.darCartas();
-	}
-
-	public void jogar() {
-		Rodada rodada = new Rodada(new Carta(EnumCarta.POKER.pegarNumero()));
-		jogadores.forEach((jogador) -> {
-			Carta carta = jogador.selecionarCarta();
-			rodada.adicionarJogada(new Jogada(jogador, carta));
-			jogador.getMao().removerCarta(carta);
-			JOptionPane.showMessageDialog(null,
-					"Jogador levando a rodada: " + rodada.getMelhorJogada().getJogador().getNome());
-		});
-		rodada.atribuirPontos();
-		this.rodadas.add(rodada);
-	}
-
 }

@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.JOptionPane;
+
 public class Rodada {
 
 	private List<Jogada> jogadas;
@@ -70,4 +72,18 @@ public class Rodada {
 		this.melhorJogada = melhorJogada;
 	}
 
+	public void iniciar(List<Jogador> jogadores) {
+		if (!jogadores.isEmpty()) {
+			while (!jogadores.get(0).getMao().getCartas().isEmpty()) {
+				jogadores.forEach((jogador) -> {
+					JOptionPane.showMessageDialog(null, "O coringa é: "+cartaCoringa.getNumero());
+					Carta carta = jogador.selecionarCarta();
+					adicionarJogada(new Jogada(jogador, carta));
+					jogador.getMao().removerCarta(carta);
+					JOptionPane.showMessageDialog(null, "Jogador levando a rodada: "+getMelhorJogada().getJogador().getNome());
+				});
+			}
+			atribuirPontos();
+		}
+	}
 }
